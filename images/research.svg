@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <defs>
+    <radialGradient id="bg-r" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#071a07"/>
+      <stop offset="100%" stop-color="#030a03"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#bg-r)"/>
+
+  <!-- Faint horizontal centreline -->
+  <line x1="80" y1="240" x2="720" y2="240" stroke="#66bb6a" stroke-width="0.5" stroke-opacity="0.12"/>
+
+  <!-- Strand 1 (dark green) — period 300px, amplitude 100, centre y=240 -->
+  <!-- y = 240 + 100·sin(2π(x−100)/300) → bezier offset = 300/8 ≈ 37.5 -->
+  <path d="M 100,240 C 138,340 212,340 250,240
+           C 288,140 362,140 400,240
+           C 438,340 512,340 550,240
+           C 588,140 662,140 700,240"
+        fill="none" stroke="#66bb6a" stroke-width="5" stroke-opacity="0.95" stroke-linecap="round"/>
+
+  <!-- Strand 2 (light green) — opposite phase -->
+  <path d="M 100,240 C 138,140 212,140 250,240
+           C 288,340 362,340 400,240
+           C 438,140 512,140 550,240
+           C 588,340 662,340 700,240"
+        fill="none" stroke="#a5d6a7" stroke-width="5" stroke-opacity="0.85" stroke-linecap="round"/>
+
+  <!-- Rungs at quarter-period positions (x = 175, 325, 475, 625) -->
+  <!-- x=175: strand1 y=340, strand2 y=140 -->
+  <line x1="175" y1="340" x2="175" y2="140" stroke="#4caf50" stroke-width="2" stroke-opacity="0.55" stroke-dasharray="5 3"/>
+  <circle cx="175" cy="340" r="8" fill="#66bb6a" fill-opacity="0.85"/>
+  <circle cx="175" cy="140" r="8" fill="#a5d6a7" fill-opacity="0.85"/>
+
+  <!-- x=325: strand1 y=140, strand2 y=340 -->
+  <line x1="325" y1="140" x2="325" y2="340" stroke="#4caf50" stroke-width="2" stroke-opacity="0.55" stroke-dasharray="5 3"/>
+  <circle cx="325" cy="140" r="8" fill="#66bb6a" fill-opacity="0.85"/>
+  <circle cx="325" cy="340" r="8" fill="#a5d6a7" fill-opacity="0.85"/>
+
+  <!-- x=475: strand1 y=340, strand2 y=140 -->
+  <line x1="475" y1="340" x2="475" y2="140" stroke="#4caf50" stroke-width="2" stroke-opacity="0.55" stroke-dasharray="5 3"/>
+  <circle cx="475" cy="340" r="8" fill="#66bb6a" fill-opacity="0.85"/>
+  <circle cx="475" cy="140" r="8" fill="#a5d6a7" fill-opacity="0.85"/>
+
+  <!-- x=625: strand1 y=140, strand2 y=340 -->
+  <line x1="625" y1="140" x2="625" y2="340" stroke="#4caf50" stroke-width="2" stroke-opacity="0.55" stroke-dasharray="5 3"/>
+  <circle cx="625" cy="140" r="8" fill="#66bb6a" fill-opacity="0.85"/>
+  <circle cx="625" cy="340" r="8" fill="#a5d6a7" fill-opacity="0.85"/>
+
+  <!-- Crossing-point accent dots -->
+  <circle cx="100" cy="240" r="5" fill="#4caf50" fill-opacity="0.6"/>
+  <circle cx="250" cy="240" r="5" fill="#4caf50" fill-opacity="0.6"/>
+  <circle cx="400" cy="240" r="5" fill="#4caf50" fill-opacity="0.6"/>
+  <circle cx="550" cy="240" r="5" fill="#4caf50" fill-opacity="0.6"/>
+  <circle cx="700" cy="240" r="5" fill="#4caf50" fill-opacity="0.6"/>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+
+  <defs>
+    <radialGradient id="bg-s" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#120a1e"/>
+      <stop offset="100%" stop-color="#07040e"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bg-s)"/>
+
+  <!-- Outer window frame -->
+  <rect x="80" y="50" width="640" height="375" rx="8" ry="8"
+        fill="#1a1028" stroke="#ce93d8" stroke-width="1.2" stroke-opacity="0.45"/>
+
+  <!-- Title bar background (top rounded, flat bottom) -->
+  <rect x="80" y="50" width="640" height="40" rx="8" ry="8" fill="#22163a"/>
+  <rect x="80" y="74" width="640" height="16" fill="#22163a"/>
+
+  <!-- Traffic lights -->
+  <circle cx="114" cy="70" r="9" fill="#ff5f57"/>
+  <circle cx="140" cy="70" r="9" fill="#ffbd2e"/>
+  <circle cx="166" cy="70" r="9" fill="#28ca41"/>
+
+  <!-- Filename pill in title bar -->
+  <rect x="315" y="63" width="170" height="13" rx="4" fill="#ce93d8" fill-opacity="0.18"/>
+
+  <!-- Divider line below title bar -->
+  <line x1="80" y1="90" x2="720" y2="90" stroke="#ce93d8" stroke-width="0.6" stroke-opacity="0.25"/>
+
+  <!-- LINE SPACING: y base = 112, step = 26px -->
+  <!-- Colours: purple=#ce93d8  blue=#90caf9  green=#a5d6a7  grey=#78909c  white=#e0e0e0  amber=#ffcc80 -->
+
+  <!-- y=112  def analyse_patient_data(df): -->
+  <rect x="112" y="112" width="34"  height="13" rx="2" fill="#ce93d8" fill-opacity="0.85"/>
+  <rect x="153" y="112" width="162" height="13" rx="2" fill="#90caf9" fill-opacity="0.80"/>
+  <rect x="321" y="112" width="46"  height="13" rx="2" fill="#e0e0e0" fill-opacity="0.55"/>
+
+  <!-- y=138  (indent 1) """Analyse clinical outcomes""" -->
+  <rect x="140" y="138" width="275" height="13" rx="2" fill="#a5d6a7" fill-opacity="0.70"/>
+
+  <!-- y=164  (indent 1) results = {} -->
+  <rect x="140" y="164" width="66"  height="13" rx="2" fill="#e0e0e0" fill-opacity="0.72"/>
+  <rect x="212" y="164" width="16"  height="13" rx="2" fill="#78909c" fill-opacity="0.65"/>
+  <rect x="234" y="164" width="24"  height="13" rx="2" fill="#ffcc80" fill-opacity="0.75"/>
+
+  <!-- y=190  (indent 1) for col in df.columns: -->
+  <rect x="140" y="190" width="28"  height="13" rx="2" fill="#ce93d8" fill-opacity="0.85"/>
+  <rect x="174" y="190" width="30"  height="13" rx="2" fill="#e0e0e0" fill-opacity="0.72"/>
+  <rect x="210" y="190" width="22"  height="13" rx="2" fill="#ce93d8" fill-opacity="0.85"/>
+  <rect x="238" y="190" width="92"  height="13" rx="2" fill="#90caf9" fill-opacity="0.80"/>
+
+  <!-- y=216  (indent 2) if df[col].dtype == 'float64': -->
+  <rect x="168" y="216" width="20"  height="13" rx="2" fill="#ce93d8" fill-opacity="0.85"/>
+  <rect x="194" y="216" width="108" height="13" rx="2" fill="#e0e0e0" fill-opacity="0.72"/>
+  <rect x="308" y="216" width="24"  height="13" rx="2" fill="#78909c" fill-opacity="0.65"/>
+  <rect x="338" y="216" width="74"  height="13" rx="2" fill="#a5d6a7" fill-opacity="0.75"/>
+
+  <!-- y=242  (indent 3) results[col] = df[col].describe() -->
+  <rect x="196" y="242" width="100" height="13" rx="2" fill="#e0e0e0" fill-opacity="0.72"/>
+  <rect x="302" y="242" width="16"  height="13" rx="2" fill="#78909c" fill-opacity="0.65"/>
+  <rect x="324" y="242" width="150" height="13" rx="2" fill="#90caf9" fill-opacity="0.80"/>
+
+  <!-- y=268  blank line (gap) -->
+
+  <!-- y=294  (indent 1) return results -->
+  <rect x="140" y="294" width="52"  height="13" rx="2" fill="#ce93d8" fill-opacity="0.85"/>
+  <rect x="198" y="294" width="64"  height="13" rx="2" fill="#e0e0e0" fill-opacity="0.72"/>
+
+  <!-- y=320  blank line (gap) -->
+
+  <!-- y=346  # run analysis pipeline -->
+  <rect x="112" y="346" width="200" height="13" rx="2" fill="#78909c" fill-opacity="0.48"/>
+
+  <!-- y=372  data = load_clinical_data('neotree.csv') -->
+  <rect x="112" y="372" width="38"  height="13" rx="2" fill="#e0e0e0" fill-opacity="0.72"/>
+  <rect x="156" y="372" width="16"  height="13" rx="2" fill="#78909c" fill-opacity="0.65"/>
+  <rect x="178" y="372" width="144" height="13" rx="2" fill="#90caf9" fill-opacity="0.80"/>
+  <rect x="328" y="372" width="118" height="13" rx="2" fill="#a5d6a7" fill-opacity="0.75"/>
+
+  <!-- y=398  results = analyse_patient_data(data) -->
+  <rect x="112" y="398" width="64"  height="13" rx="2" fill="#e0e0e0" fill-opacity="0.72"/>
+  <rect x="182" y="398" width="16"  height="13" rx="2" fill="#78909c" fill-opacity="0.65"/>
+  <rect x="204" y="398" width="162" height="13" rx="2" fill="#90caf9" fill-opacity="0.80"/>
+  <rect x="372" y="398" width="46"  height="13" rx="2" fill="#e0e0e0" fill-opacity="0.55"/>
+
+</svg>
